@@ -8,6 +8,7 @@ import routeRoutes from "./routes/routeRoutes.js"
 import busRoutes from "./routes/busRoutes.js";
 import assignmentRoutes from "./routes/assignmentRoutes.js";
 import authRoutes from "./routes/authRoutes.js";
+import webRoutes from "./routes/webRoutes.js";
 
 const port = process.env.PORT;
 
@@ -25,6 +26,7 @@ app.use("/api/routes", routeRoutes);
 app.use("/api/bus", busRoutes);
 app.use("/api/assignments", assignmentRoutes);
 app.use("/api/auth", authRoutes);
+app.use("/api/web", webRoutes);
 
 app.listen(port, '0.0.0.0', () => {
     console.log(`Server is listning at ${port}`)
